@@ -11,6 +11,7 @@
           extend: {
             colors: {
               pkk: "#72d1e4",
+              dark: "#1a202c",
             },
           },
         },
@@ -49,7 +50,29 @@
       </div>
 
       <!-- Right Side -->
-      <div class="col-span-6 h-screen bg-white"></div>
+      <div class="col-span-6 h-screen bg-white flex flex-col pl-20 pt-8 pr-20 font-sans gap-12">
+        <div>
+          <p class="text-4xl font-bold">Welcome To Techfree!</p>
+          <p class="text-lg">Please sign up first</p>
+        </div>
+        <form class="flex flex-col" action="">
+          <label for="username">Username</label>
+          <input class="w-full mb-8 mt-1 border-2 border-dark rounded-lg h-10 p-2" type="text" name="username" />
+
+          <label for="email">Email</label>
+          <input class="w-full mb-8 mt-1 border-2 border-dark rounded-lg h-10 p-2" type="text" name="email" />
+
+          <label for="password">Password</label>
+          <input class="w-full mb-12 mt-1 border-2 border-dark rounded-lg h-10 p-2" type="password" name="password" id="" />
+
+          <button class="bg-dark w-full h-10 rounded-lg text-white font-bold mb-5 pb-0.5">Create Account</button>
+          <button class="flex justify-center items-center gap-5 w-full h-10 rounded-lg font-bold border-2 border-dark">
+            <img src="asset/images/Google_G_logo.svg.png" alt="Logo Google" class="w-6" />
+            <p class="mb-0.5">Sign Up with Google</p>
+          </button>
+        </form>
+        <p class="text-center">Already have an account? <a href="#" class="text-pkk">Sign In</a></p>
+      </div>
     </section>
   </body>
 </html>
