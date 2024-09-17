@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pkk: "#72d1e4",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-6">
+          <a href="#"><img src="asset/logo tech free (1).png" class="w-12 m-0 p-0" alt="" /></a>
+          <div class="space-x-4">
+            <a href="#" class="text-gray-800 hover:text-pkk">Home</a>
+            <a href="#" class="text-gray-800 hover:text-pkk">Services</a>
+            <a href="#" class="text-gray-800 hover:text-pkk">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-pkk text-white py-20">
+      <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-5xl font-bold">Welcome To The New World</h1>
+        <p class="mt-4 text-lg">Wujudkan impian dengan bekerja kapan saja dan di mana saja!</p>
+        <a href="#" class="mt-6 inline-block bg-white text-pkk font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-gray-200">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Keuntungan Kami -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-gray-800">Our Advantages</h2>
+        <p class="mt-4 text-lg text-gray-600">Apa keuntungan yang layanan kami tawarkan?</p>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white shadow-md rounded-lg p-8">
+            <h3 class="text-xl font-bold text-pkk">Aman dan Terpercaya</h3>
+            <p class="mt-4 text-gray-600">Seleksi yang dilakukan dengan ketat, dengan mempertimbangkan portofolio, kinerja, dan tanggung jawab menjamin kredibilitas para freelancer kami.</p>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg p-8">
+            <h3 class="text-xl font-bold text-pkk">Kostumisasi Tanpa Batas</h3>
+            <p class="mt-4 text-gray-600">Diskusikan deadline, bayaran, dan semua hal yang terkait dengan bebas!</p>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg p-8">
+            <h3 class="text-xl font-bold text-pkk">Fleksibilitas Kerja</h3>
+            <p class="mt-4 text-gray-600">Bukan hanya mempekerjakan orang, kamu juga bisa bekerja di sini! Kerja di mana saja, kapan saja, dengan siapa saja, dalam hal apa saja!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="py-16 bg-pkk">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-white">About Us</h2>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white shadow-md rounded-lg p-8">
+            <h3 class="text-xl font-bold text-pkk">Latar Belakang</h3>
+            <p class="mt-4 text-gray-600">
+              Di era sekarang, dunia kerja mengalami transformasi yang sangat signifikan, dipengaruhi oleh kemajuan teknologi, perubahan sosial, dan dinamika ekonomi global. Perubahan ini tidak hanya mempengaruhi bagaimana pekerjaan
+              dilakukan, tetapi juga mendefinisikan ulang konsep pekerjaan itu sendiri. Oleh karna itu kami di sini membuat platform pekerja lepas/freelancer yang memiliki kebebasan untuk menentukan jadwal kerja mereka sendiri dan bekerja
+              dari mana saja.
+            </p>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg p-8">
+            <h3 class="text-xl font-bold text-pkk">Tujuan</h3>
+            <p class="mt-4 text-gray-600">Kami menyediakan platform online yang memudahkan orang menawarkan jasa freelance sesuai bakat mereka, sekaligus menjadi solusi bagi klien yang membutuhkan layanan profesional atau custom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA (Call To Action) -->
+    <section class="bg-gray-800 text-white py-16">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-bold">Ready To Get Started?</h2>
+        <p class="mt-4 text-lg">Bergabunglah sebagai seorang klien maupun freelancer! Ambil peluang yang tak terbatas dan raihlah kebebasanmu!</p>
+        <a href="#" class="mt-6 inline-block bg-pkk text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-pkk">Sign Up Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <p>&copy; 2024 Alomanius. All rights reserved.</p>
+        <div class="mt-4 space-x-4">
+          <a href="#" class="hover:text-white">❤️</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
