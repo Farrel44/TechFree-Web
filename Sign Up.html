@@ -18,19 +18,32 @@
       };
     </script>
   </head>
-  <body class="bg-gray-100 h-full">
+  <body class="bg-gray-100 h-full lg:pt-0 max-lg:pt-20">
     <!-- Navbar -->
-    <nav class="bg-white text-gray-800 shadow-lg">
+    <nav class="bg-white text-gray-800 shadow-lg lg:relative lg:top-auto lg:left-auto lg:right-auto lg:z-auto fixed top-0 left-0 right-0 z-50">
       <div class="max-w-7xl mx-auto px-4">
-        <div class="flex justify-between items-center py-6">
-          <a href="#"><img src="asset/images/logo tech free (1).png" class="w-12 m-0 p-0" alt="" /></a>
-          <div class="flex items-center space-x-6">
+        <div class="flex justify-between items-center py-4">
+          <a href="#">
+            <img src="asset/images/logo tech free (1).png" class="w-12 m-0 p-0" alt="Logo" />
+          </a>
+
+          <!-- Hamburger Button Mobile -->
+          <div class="lg:hidden">
+            <button id="hamburger" class="focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Menu Navbar Desktop -->
+          <div class="hidden lg:flex items-center space-x-6">
             <div class="space-x-4">
               <a href="index.html" class="hover:text-pkk">Home</a>
               <a href="services.html" class="hover:text-pkk">Services</a>
             </div>
-            <a href="#" class="hover:text-pkk"
-              ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+            <a href="#" class="hover:text-pkk">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -38,6 +51,15 @@
                 />
               </svg>
             </a>
+          </div>
+        </div>
+
+        <!-- Menu Navbar Mobile -->
+        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-48 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40">
+          <div class="flex flex-col items-start space-y-4 py-8 px-6">
+            <a href="index.html" class="block hover:text-pkk">Home</a>
+            <a href="services.html" class="block hover:text-pkk">Services</a>
+            <a href="#" class="hover:text-pkk flex items-center"> Sign Up </a>
           </div>
         </div>
       </div>
@@ -50,7 +72,7 @@
       </div>
 
       <!-- Right Side -->
-      <div class="col-span-6 h-fit pb-10 bg-white flex flex-col md:pl-20 md:pr-20 pt-8 pl-8 pr-8 font-sans gap-6">
+      <div class="md:col-span-6 md:h-screen h-fit pb-10 bg-white flex flex-col md:pl-20 md:pr-20 pt-12 pl-8 pr-8 font-sans gap-6">
         <div>
           <p class="text-4xl font-bold">Welcome To Techfree!</p>
           <p class="text-lg">Please sign up first</p>
@@ -84,5 +106,6 @@
         </div>
       </div>
     </footer>
+    <script src="asset/js/hamburger_menu.js"></script>
   </body>
 </html>
